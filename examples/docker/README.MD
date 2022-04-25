@@ -4,13 +4,13 @@
 - First step is always [installing Pulumi](../../README.md).
 - You need of course have Docker running.
 
-### Using Typescript
+### Example using Typescript
 - Open a terminal window and navigate to a folder in which you want to create your Pulumi Project.
 - Type: `pulumi new typescript`
-- Enter your Pulumi access token or enter to login in using the browser (create an account if you have not done yet)
+- Enter your Pulumi access token or enter to login in using the browser if asked or create an account if you have not done yet
 - Enter a name for your project, e.g.: `DockerExample` (A project name may only contain alphanumeric, hyphens, underscores, and periods)
 - Enter a description, e.g. : `Docker example project`
-- Enter a stack name, e.g.: `docker-example-dev` (a stack is linked to your organization and project and has its own set of configuration)
+- Enter a stack name, e.g.: `docker-example-dev` (a stack is linked to your organization and project and has its own set of configuration).
 - The project is now being created and required NPM modules are installed.
 - The file strcuture will look like:
 
@@ -51,3 +51,4 @@
   And perform a `pulumi update` again. You will see that the existing container will be replaced. The same will occur if you change for example the ports after the stack is already up.
 - Run `pulumi destroy` to revert your actions.
 - An example with PostgreSQL container plus a volume can be found in the container-with-volumes folder
+- Run `pulumi stack rm <stack>` to completely remove the stack associated with the project in the current folder. This will also remove the stack from the Pulumi service and if it was the last one, also the project.

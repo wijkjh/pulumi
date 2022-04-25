@@ -44,3 +44,4 @@ If you want to override this behaviour, you need to provide more details. Look i
   pulumi import azure-native:resources:ResourceGroup <name of Pulumi resource in the program> /subscriptions/<subscriptionId>/resourceGroups/<name of existing resourcegroup>
    ```
 - If set the code correctly after the import, you will be able to perform a `pulumi up`.
+- Note that you can not delete a protected resource. If you use the same resourcegroup in multiple projects and remove the delete protection, then a single `pulumi destroy` in one project could lead to the entire resource group beining deleted. So either do not share resource groups over multiple projects or keep the resource group out of the projects.

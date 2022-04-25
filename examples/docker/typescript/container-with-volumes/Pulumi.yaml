@@ -1,0 +1,3 @@
+name: container-with-volumes
+runtime: nodejs
+description: Docker example with PostgreSQL and a volume

@@ -1,0 +1,3 @@
+name: azure-storage-account
+runtime: nodejs
+description: Example with Azure Blob storage account

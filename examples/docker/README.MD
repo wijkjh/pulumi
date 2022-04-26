@@ -12,7 +12,7 @@
 - Enter a description, e.g. : `Docker example project`
 - Enter a stack name, e.g.: `docker-example-dev` (a stack is linked to your organization and project and has its own set of configuration).
 - The project is now being created and required NPM modules are installed.
-- The file strcuture will look like:
+- The file structure will look like:
 
   ![file structure](./pulumi-typescript-docker-files.png)
 - Now let's install the Docker provider by typing in the terminal window: `npm i @pulumi/docker`. This add the Docker package to your `package.json` file.
